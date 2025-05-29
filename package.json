@@ -1,0 +1,28 @@
+{
+  "name": "stock-market-predictor-chatbot",
+  "version": "1.0.0",
+  "main": "backend/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/app.js",
+    "dev": "nodemon backend/app.js",
+    "train": "python3 train_model.py",
+    "install-py-deps": "pip3 install pandas numpy scikit-learn yfinance"
+  },
+  "keywords": [
+    "stock",
+    "market",
+    "prediction",
+    "chatbot",
+    "machine-learning"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "An AI-powered stock market prediction chatbot using machine learning",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
+  }
+}

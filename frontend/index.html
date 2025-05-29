@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stock Market Predictor Chatbot</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <h1><i class="fas fa-chart-line"></i> Stock Market Predictor</h1>
+      <span>AI-Powered Analysis</span>
+    </div>
+    
+    <div id="chat-box">
+      <!-- Messages will be added here dynamically -->
+    </div>
+    
+    <div class="suggestions">
+      <div class="suggestion-chip" onclick="usesuggestion('What is the price of AAPL?')">AAPL price</div>
+      <div class="suggestion-chip" onclick="usesuggestion('Will MSFT go up tomorrow?')">MSFT prediction</div>
+      <div class="suggestion-chip" onclick="usesuggestion('How is the market today?')">Market sentiment</div>
+      <div class="suggestion-chip" onclick="usesuggestion('Latest news on TSLA')">TSLA news</div>
+      <div class="suggestion-chip" onclick="usesuggestion('Should I invest in NVDA?')">NVDA analysis</div>
+      <div class="suggestion-chip" onclick="usesuggestion('Compare AMZN and GOOGL')">Compare stocks</div>
+      <div class="suggestion-chip" onclick="usesuggestion('Top performing sectors')">Sector analysis</div>
+      <div class="suggestion-chip" onclick="usesuggestion('What is the PE ratio of META?')">META fundamentals</div>
+    </div>
+    
+    <div class="input-area">
+      <input 
+        type="text" 
+        id="user-input" 
+        placeholder="Ask about stock prices, predictions, market sentiment..." 
+        onkeypress="if(event.key === 'Enter') sendMessage()"
+      />
+      <button onclick="sendMessage()">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

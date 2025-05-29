@@ -1,0 +1,7 @@
+{
+    "watch": ["backend/routes", "backend/app.js"],
+    "ignore": ["venv", "node_modules", "**/*.pkl", "**/*.mat"],
+    "ext": "js,json",
+    "exec": "node backend/app.js"
+  }
+  
